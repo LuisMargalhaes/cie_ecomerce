@@ -1,4 +1,5 @@
-import 'package:cie/pages/LoginPage.dart';
+import 'package:cie/pages/HomePage.dart';
+import 'package:cie/pages/itemPage.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -9,10 +10,12 @@ class MyApp extends StatelessWidget{
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(scaffoldBackgroundColor: Color(0xFFCEDDEE
-      )
+      ),
       ),
    routes: {
-"/" : (context) => LoginPage(),
+"/" : (context) => HomePage(),
+"homePage" : (context) => HomePage(),
+"itemPage" : (context) => ItemPage(),
    },
     );
   }
